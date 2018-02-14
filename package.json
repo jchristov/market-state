@@ -1,0 +1,33 @@
+{
+  "name": "price",
+  "version": "1.0.0",
+  "description": "Service responsible for the prices (and candles) of the cryptocurrencies.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crypsense/price.git"
+  },
+  "keywords": [
+    "crypsense",
+    "price",
+    "cryptocurrency",
+    "trading-bot",
+    "trading-strategies"
+  ],
+  "author": "João Fernandes <ojoaofernandes@gmail.com> (https://linkedin.com/in/ojoaofernandes)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crypsense/price/issues"
+  },
+  "homepage": "https://github.com/crypsense/price#readme",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
