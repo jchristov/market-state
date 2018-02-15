@@ -10,7 +10,7 @@ class Consumer {
 
   listen({ name, offset, partition }) {
     const topic = {
-      name,
+      topic: name,
       offset,
       partition,
     };
