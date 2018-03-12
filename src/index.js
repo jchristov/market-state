@@ -1,6 +1,7 @@
 const Consumer = require('./transports/Consumer');
 const Repository = require('./database/Repository');
 const MongoDB = require('./database/MongoDB');
+const MessageHandler = require('./transports/MessageHandler');
 
 // Defines the configuration object with the addresses of the streaming
 // platform and the database.
@@ -29,5 +30,8 @@ consumer.listen({
   offset: 0,
   partition: 0,
 });
+
+const msgHandler = new MessageHandler(repo, consumer);
+msgHandler.start();
 
 consumer.start();
