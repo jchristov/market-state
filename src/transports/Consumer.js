@@ -1,7 +1,9 @@
+const EventEmmiter = require('events');
 const kafka = require('kafka-node');
 
-class Consumer {
+class Consumer extends EventEmmiter {
   constructor({ ip, port }) {
+    super();
     const host = `${ip}:${port}`;
     const client = new kafka.Client(host);
 
@@ -29,7 +31,7 @@ class Consumer {
 
   start() {
     this.consumer.on('message', (msg) => {
-      console.log(msg);
+      this.emit(msg.topic, msg.value);
     });
   }
 }
