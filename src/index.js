@@ -9,7 +9,7 @@ const config = {
   database: {
     ip: '127.0.0.1',
     port: 27017,
-    database: 'cryptosense-tickers',
+    database: 'crypsense-price',
   },
   streaming: {
     ip: '127.0.0.1',

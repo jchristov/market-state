@@ -8,7 +8,7 @@ class MessageHandler {
     this.consumer.on('price.update', (data) => {
       console.log(data);
       console.log();
-      // this.repository.save('tickers', data);
+      this.repository.insert('tickers', JSON.parse(data));
     });
   }
 
