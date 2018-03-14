@@ -2,9 +2,9 @@
 
 A platform to automate trading strategies on the cryptographic currency market.
 
-## Price Service
+## Market State Service
 
-Service responsible for the prices (and candles) of the cryptocurrencies.
+Service responsible for the crypto market state (e.g., prices, volume, and orders).
 
 ## Getting Started
 
