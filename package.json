@@ -1,7 +1,7 @@
 {
-  "name": "price",
+  "name": "market-state",
   "version": "1.0.0",
-  "description": "Service responsible for the prices (and candles) of the cryptocurrencies.",
+  "description": "Service responsible for the crypto market state (e.g., prices, volume, and orders).",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src",
@@ -10,11 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crypsense/price.git"
+    "url": "git+https://github.com/crypsense/market-state.git"
   },
   "keywords": [
     "crypsense",
-    "price",
+    "market state",
+    "prices",
+    "volume",
+    "orders",
     "cryptocurrency",
     "trading-bot",
     "trading-strategies"
@@ -22,9 +25,9 @@
   "author": "João Fernandes <ojoaofernandes@gmail.com> (https://linkedin.com/in/ojoaofernandes)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crypsense/price/issues"
+    "url": "https://github.com/crypsense/market-state/issues"
   },
-  "homepage": "https://github.com/crypsense/price#readme",
+  "homepage": "https://github.com/crypsense/market-state#readme",
   "devDependencies": {
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
